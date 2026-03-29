@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | بومودورو الشجرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="pomodoro" class="pomodoro-body">
+  <div class="page-shell">
+    <header class="sub-hero pomodoro-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link active" href="pomodoro.html">البومودورو</a>
+          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">ازرعي تركيزك</p>
+          <h1>مؤقت مذاكرة بتقنية بومودورو يجعل الشجرة تنمو مع وقت تركيزك</h1>
+          <p class="hero-text">اختاري شجرتك المفضلة، شغلي المؤقت، وشاهدي الغرسة تكبر حتى تصبح شجرة جميلة داخل غابتك الخاصة.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="pomodoro-layout">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">اختيار الشجرة</p>
+            <h2>حددي نوع الشجرة</h2>
+          </div>
+        </div>
+        <div class="tree-choices" id="tree-choices"></div>
+      </section>
+
+      <section class="panel timer-panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">المؤقت</p>
+            <h2>بومودورو المذاكرة</h2>
+          </div>
+        </div>
+
+        <div class="split-inputs">
+          <input id="focus-minutes" type="number" min="1" max="120" value="25">
+          <input id="break-minutes" type="number" min="1" max="60" value="5">
+        </div>
+
+        <div class="timer-display" id="timer-display">25:00</div>
+        <p class="helper-text" id="timer-status">جاهزة لزرع جلسة تركيز جديدة.</p>
+
+        <div class="timer-actions">
+          <button class="primary-btn" id="start-timer" type="button">ابدأ الزراعة</button>
+          <button class="ghost-btn" id="pause-timer" type="button">إيقاف مؤقت</button>
+          <button class="ghost-btn" id="reset-timer" type="button">إعادة</button>
+        </div>
+
+        <div class="growing-stage">
+          <div class="soil"></div>
+          <div class="tree-plant" id="tree-plant">
+            <div class="tree-trunk"></div>
+            <div class="tree-crown"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel forest-panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">الغابة الخاصة بك</p>
+            <h2>الأشجار التي زرعتها</h2>
+          </div>
+          <span class="forest-counter" id="forest-counter">0 شجرة</span>
+        </div>
+        <div class="forest-grid" id="forest-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

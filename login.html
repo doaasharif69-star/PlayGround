@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | تسجيل الدخول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="login">
+  <div class="page-shell auth-shell">
+    <section class="auth-hero">
+      <div class="auth-copy">
+        <p class="eyebrow">ابدئي رحلتك الإنتاجية</p>
+        <h1>تسجيل دخول فعلي للموقع مع صفحات للمهام والصلاة والكورسات والبومودورو</h1>
+        <p class="hero-text">
+          أنشئي حسابك باسمك ونوعك وبياناتك، وبعدها سيدخلك الموقع تلقائيًا لواجهة منظمة تشجعك كل يوم.
+        </p>
+      </div>
+
+      <div class="auth-card panel">
+        <div class="auth-tabs">
+          <button class="auth-tab active" type="button" data-auth-tab="login">تسجيل الدخول</button>
+          <button class="auth-tab" type="button" data-auth-tab="register">إنشاء حساب</button>
+        </div>
+
+        <form id="login-form" class="auth-form">
+          <input id="login-email" type="email" placeholder="البريد الإلكتروني" required>
+          <input id="login-password" type="password" placeholder="كلمة المرور" required>
+          <button class="primary-btn" type="submit">دخول</button>
+        </form>
+
+        <form id="register-form" class="auth-form hidden">
+          <input id="register-name" type="text" placeholder="الاسم" required>
+          <div class="split-inputs">
+            <select id="register-gender" required>
+              <option value="">النوع</option>
+              <option value="female">بنت</option>
+              <option value="male">ولد</option>
+            </select>
+            <input id="register-city" type="text" placeholder="المدينة" required>
+          </div>
+          <div class="split-inputs">
+            <input id="register-country" type="text" placeholder="الدولة" value="Egypt" required>
+            <input id="register-email" type="email" placeholder="البريد الإلكتروني" required>
+          </div>
+          <input id="register-password" type="password" placeholder="كلمة المرور" minlength="4" required>
+          <button class="primary-btn" type="submit">إنشاء الحساب</button>
+        </form>
+
+        <p class="helper-text" id="auth-status">أهلاً بك في أشطر كتكوت.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

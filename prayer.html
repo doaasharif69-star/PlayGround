@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | الصلاة والقرآن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="prayer">
+  <div class="page-shell">
+    <header class="sub-hero prayer-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link active" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link" href="pomodoro.html">البومودورو</a>
+          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">عبادتك نور يومك</p>
+          <h1>تابعي صلاتك اليومية وورد القرآن بنظام مريح وواضح</h1>
+          <p class="hero-text">علّمي على كل صلاة أديتيها، وسجلي ورد القرآن اليومي، وشوفي نسبة التزامك تكبر أمامك.</p>
+        </div>
+        <div class="hero-card compact-progress">
+          <div class="progress-ring-wrap small">
+            <svg class="progress-ring" viewBox="0 0 160 160" aria-label="نسبة الالتزام اليومي">
+              <circle class="ring-bg" cx="80" cy="80" r="62"></circle>
+              <circle class="ring-value prayer-ring" cx="80" cy="80" r="62"></circle>
+            </svg>
+            <div class="ring-center">
+              <strong id="prayer-progress-value">0%</strong>
+              <span>نسبة الالتزام</span>
+            </div>
+          </div>
+          <p class="progress-note" id="prayer-progress-note">اجعلي اليوم ممتلئًا بالصلاة والقرآن.</p>
+        </div>
+      </div>
+    </header>
+    <main class="content-grid prayer-grid">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">جدول الصلاة</p>
+            <h2>صلوات اليوم</h2>
+          </div>
+        </div>
+        <form id="city-form" class="quran-form city-form">
+          <div class="split-inputs">
+            <input id="city-input" type="text" placeholder="المدينة">
+            <input id="country-input" type="text" placeholder="الدولة">
+          </div>
+          <button class="ghost-btn" type="submit">تحديث أوقات الصلاة</button>
+        </form>
+        <p class="helper-text" id="prayer-location-text">يتم تحديد الأوقات حسب مدينتك.</p>
+        <ul class="prayer-list" id="prayer-list"></ul>
+      </section>
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">ورد اليوم</p>
+            <h2>القرآن الكريم</h2>
+          </div>
+        </div>
+        <form id="quran-form" class="quran-form">
+          <label for="quran-pages">عدد الصفحات التي قرأتيها اليوم</label>
+          <div class="quran-row">
+            <input id="quran-pages" type="number" min="0" max="100" value="0">
+            <button class="primary-btn" type="submit">حفظ</button>
+          </div>
+        </form>
+        <div class="quran-summary">
+          <p id="quran-summary-text">هدف اليوم: 4 صفحات.</p>
+          <div class="linear-progress">
+            <span id="quran-bar"></span>
+          </div>
+        </div>
+      </section>
+      <section class="panel reminder-panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">تذكيرات</p>
+            <h2>الصلاة والقرآن</h2>
+          </div>
+        </div>
+        <div class="reminder-card">
+          <h3>تفعيل التنبيهات</h3>
+          <p>اضغطي لتفعيل إشعارات المتصفح. إذا كان المتصفح يدعمها، سيصلك تذكير لطيف كل فترة للعودة للصلاة والورد.</p>
+          <button class="primary-btn" id="notify-btn" type="button">تفعيل التذكير</button>
+          <p class="helper-text" id="notify-status">الإشعارات غير مفعّلة بعد.</p>
+        </div>
+        <div class="reminder-card">
+          <h3>أوقات الصلوات اليومية</h3>
+          <p class="helper-text" id="prayer-fetch-status">سنحاول جلب أوقات الصلاة تلقائيًا من الإنترنت حسب المدينة المحفوظة في حسابك.</p>
+          <p class="helper-text">إذا لم يتوفر الاتصال، سيعرض الموقع آخر أوقات تم حفظها لك.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

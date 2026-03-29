@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | الملف الشخصي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="profile">
+  <div class="page-shell">
+    <header class="sub-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link" href="pomodoro.html">البومودورو</a>
+          <a class="nav-link active" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">لوحة التحكم الشخصية</p>
+          <h1>عدّلي بياناتك وراجعي نشاطك اليومي من مكان واحد</h1>
+          <p class="hero-text">يمكنك من هنا تحديث الاسم والنوع والمدينة والدولة، مع ملخص سريع عن إنجازك اليوم.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="profile-layout">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">بيانات الحساب</p>
+            <h2>تعديل الملف الشخصي</h2>
+          </div>
+        </div>
+        <form id="profile-dashboard-form" class="auth-form">
+          <input id="dashboard-name" type="text" placeholder="الاسم" required>
+          <div class="split-inputs">
+            <select id="dashboard-gender" required>
+              <option value="female">بنت</option>
+              <option value="male">ولد</option>
+            </select>
+            <input id="dashboard-email" type="email" placeholder="البريد الإلكتروني" disabled>
+          </div>
+          <div class="split-inputs">
+            <input id="dashboard-city" type="text" placeholder="المدينة" required>
+            <input id="dashboard-country" type="text" placeholder="الدولة" required>
+          </div>
+          <input id="dashboard-password" type="password" placeholder="كلمة المرور الجديدة - اتركيها فارغة إذا لا تريدين تغييرها">
+          <button class="primary-btn" type="submit">حفظ التعديلات</button>
+        </form>
+        <p class="helper-text" id="profile-status">بياناتك جاهزة للتحديث.</p>
+      </section>
+
+      <section class="panel profile-summary-panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">ملخص اليوم</p>
+            <h2>مستوى التقدم</h2>
+          </div>
+        </div>
+        <div class="summary-cards" id="profile-summary"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
