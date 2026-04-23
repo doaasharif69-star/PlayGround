@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | التحفيز والرسائل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="motivation">
+  <div class="page-shell">
+    <header class="sub-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="life-azkar.html">أذكار متنوعة</a>
+          <a class="nav-link" href="sebha.html">السبحة</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link" href="skills.html">المهارات</a>
+          <a class="nav-link" href="books.html">الكتب</a>
+          <a class="nav-link" href="pomodoro.html">البومودورو</a>
+          <a class="nav-link active" href="motivation.html">التحفيز</a>
+          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">مساحة البِشر والطاقة</p>
+          <h1>لفة واحدة قد تعطيك صورة جميلة ورسالة تبعث الطمأنينة والحماس</h1>
+          <p class="hero-text">لفّي العجلة لتحصلي على بطاقة تحفيزية جديدة، واضغطي على زر رسالة الله لك لتظهر لك رسالة مختلفة كل مرة.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="motivation-layout">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">عجلة التحفيز</p>
+            <h2>لفّي العجلة</h2>
+          </div>
+        </div>
+        <div class="wheel-stage">
+          <div class="wheel-pointer"></div>
+          <div class="motivation-wheel" id="motivation-wheel">
+            <div class="wheel-center">تحفيز</div>
+          </div>
+        </div>
+        <button class="primary-btn" id="spin-wheel-btn" type="button">لف العجلة</button>
+      </section>
+
+      <section class="panel motivation-result-panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">النتيجة</p>
+            <h2>بطاقتك الجميلة</h2>
+          </div>
+        </div>
+        <article class="motivation-card-view" id="motivation-card-view">
+          <img id="motivation-image" alt="صورة تحفيزية">
+          <div class="motivation-copy">
+            <strong id="motivation-title">ابدئي بلفة العجلة</strong>
+            <p id="motivation-text">كل مرة ستظهر لك بطاقة مختلفة بصورة ورسالة جديدة.</p>
+          </div>
+        </article>
+        <button class="ghost-btn" id="god-message-btn" type="button">رسالة الله لك</button>
+        <p class="god-message-box" id="god-message-box">اضغطي على الزر لتظهر لك رسالة جديدة تبعث الأمل والسكينة.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | الكتب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="books">
+  <div class="page-shell">
+    <header class="sub-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link" href="skills.html">المهارات</a>
+          <a class="nav-link active" href="books.html">الكتب</a>
+          <a class="nav-link" href="motivation.html">التحفيز</a>
+          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">مكتبة عربية كبيرة</p>
+          <h1>أقسام كتب عربية كبيرة ومنظمة مع روابط قراءة قانونية</h1>
+          <p class="hero-text">كل قسم هنا مبني على أكثر من مصدر قراءة عربي وقانوني، بحيث تجدي داخل كل قسم مكتبات وروابط كثيرة جدًا تقودك إلى 200+ كتاب أو أكثر في المجال نفسه.</p>
+        </div>
+      </div>
+    </header>
+    <section class="panel reader-panel">
+      <div class="panel-head">
+        <div>
+          <p class="mini-title">قارئ الكتب داخل الموقع</p>
+          <h2 id="reader-title">اختاري قسمًا من الأسفل لفتح مكتبة القراءة العربية هنا</h2>
+        </div>
+      </div>
+      <p class="helper-text" id="reader-description">سيتم عرض مكتبة القراءة داخل الموقع نفسه. بعض المكتبات قد تمنع العرض الداخلي تقنيًا، لكننا نحاول فتحها هنا أولًا قبل أي شيء.</p>
+      <div class="reader-frame-wrap">
+        <iframe id="books-reader-frame" title="قارئ الكتب العربي" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <main class="books-grid" id="books-grid"></main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

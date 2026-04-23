@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أشطر كتكوت | السبحة الإلكترونية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="sebha">
+  <div class="page-shell">
+    <header class="sub-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">أشطر كتكوت</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">مهامي اليومية</a>
+          <a class="nav-link" href="prayer.html">الصلاة والقرآن</a>
+          <a class="nav-link" href="azkar.html">الأذكار</a>
+          <a class="nav-link" href="life-azkar.html">أذكار متنوعة</a>
+          <a class="nav-link active" href="sebha.html">السبحة</a>
+          <a class="nav-link" href="courses.html">الكورسات</a>
+          <a class="nav-link" href="skills.html">المهارات</a>
+          <a class="nav-link" href="books.html">الكتب</a>
+          <a class="nav-link" href="pomodoro.html">البومودورو</a>
+          <a class="nav-link" href="motivation.html">التحفيز</a>
+          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link auth-nav-link" href="login.html">خروج</a>
+        </div>
+      </nav>
+      <div class="sub-hero-content">
+        <div>
+          <p class="eyebrow">ذكر مريح وسريع</p>
+          <h1>سبحة إلكترونية لتسبيح أي ذكر تريدينه</h1>
+          <p class="hero-text">اختاري الذكر الجاهز أو اكتبيه بنفسك، ثم ابدئي العد بسهولة.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="sebha-layout">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="mini-title">الذكر الحالي</p>
+            <h2>السبحة الإلكترونية</h2>
+          </div>
+        </div>
+        <div class="sebha-controls">
+          <select id="sebha-presets">
+            <option value="سبحان الله">سبحان الله</option>
+            <option value="الحمد لله">الحمد لله</option>
+            <option value="الله أكبر">الله أكبر</option>
+            <option value="لا إله إلا الله">لا إله إلا الله</option>
+            <option value="أستغفر الله">أستغفر الله</option>
+          </select>
+          <input id="sebha-custom-text" type="text" placeholder="أو اكتبي ذكرًا مخصصًا">
+          <input id="sebha-target" type="number" min="1" value="33" placeholder="الهدف">
+        </div>
+        <div class="sebha-display">
+          <p id="sebha-current-text">سبحان الله</p>
+          <strong id="sebha-counter">0</strong>
+          <span id="sebha-target-text">من 33</span>
+        </div>
+        <div class="timer-actions">
+          <button class="primary-btn" id="sebha-count-btn" type="button">تسبيحة</button>
+          <button class="ghost-btn" id="sebha-reset-btn" type="button">إعادة</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
